@@ -1,0 +1,7 @@
+{
+  "name": "@types/design-tokens",
+  "version": "1.0.0",
+  "description": "TypeScript type definitions for my-library",
+  "typings": "index.d.ts",
+  "license": "MIT"
+}

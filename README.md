@@ -1,0 +1,2 @@
+# Design Tokens Types
+Based on the W3C Community Group spec, this is a work in progress to define some types to port over to https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types so that everyone can share them.
