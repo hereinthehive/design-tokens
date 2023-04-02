@@ -7,32 +7,32 @@ declare namespace DesignTokens {
   /**
    * These are the basic types derved from the spec
    */
-  enum TokenTypeSingle {
-    color,
-    dimension,
-    duration,
-    fontFamily,
-    fontWeight,
-    number,
+  enum SingleTokenType {
+    Color = "color",
+    Dimension = "dimension",
+    Duration = "duration",
+    FontFamily = "fontFamily",
+    FontWeight = "fontWeight",
+    Number = "number",
   }
   
   /**
    * Composite types are also defined in the space
    */
-  enum TokenTypeComposite {
-    border,
-    cubicBezier,
-    gradient,
-    shadow,
-    strokeStyle,
-    transition,
-    typography
+  enum CompositeTokenType {
+    Border = "border",
+    CubicBezier = "cubicBezier",
+    Gradient = "gradient",
+    Shadow = "shadow",
+    StrokeStyle = "strokeStyle",
+    Transition = "transition",
+    Typography = "typography"
   }
 
   /**
    * To ensure that the $value of a composite object is clear what it can store
    */
-  interface TokenItemCompositeObject {
+  interface CompositeTokenItemValue {
     [key: string]: string | number
   }
 
@@ -40,8 +40,8 @@ declare namespace DesignTokens {
    * The item object described the content of a specific token
    */
   interface TokenItemObject {
-    "$type": TokenTypeSingle | TokenTypeComposite
-    "$value": number | number[] | string |  string[] | TokenItemCompositeObject
+    "$type": SingleTokenType | CompositeTokenType
+    "$value": number | number[] | string |  string[] | CompositeTokenItemValue
     "$description"?: string
     "$extensions"?: object
   }
