@@ -3,7 +3,7 @@
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
 
-declare namespace DesignTokens {
+declare global {
   /**
    * These are the basic types derved from the spec
    */
